@@ -38,6 +38,10 @@ footer{
     text-align: center;
 }
 
+section.obj{
+    background: white;
+}
+
 @media screen and (max-width: 630px) {
     img{
         margin: 15px auto;
