@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
+    <!-- Cargamos los css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Cargamos los js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/botonSubir.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Cargamos el Icono del menu cuando esta en responsive -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!-- Menu -->
+    <a name="arriba"></a> 
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Inicio</a>
+        <a href="escuderias.html">Escuderias</a>
+        <a href="#pilotos">Pilotos</a>
+        <a href="#circuitos">Circuitos</a>
+        <a href="objetivos.html" class="active">Objetivos</a>
+
+        <!-- Enlace para abrir menu en responsive -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav> 
+    <!-- Fin de Menu -->
+    
+
+	<section class="obj">
+        <article>
+                <dl id="faqs">
+                        <dt>Tema de la Web</dt>
+                        <dd>Formula 1</dd>
+                        <dt>A quien va dirigida la Web</dt>
+                        <dd>A la gente interesada en informacion sore la Formula 1</dd>
+                    </dl>
+        </article>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+            Carlos Javier Rodriguez Martin &#9400; desde 2018
+    </footer>
+    <!-- Fin Footer -->
+    
+    <a href="#" class="botonSubir" class="boton-subir">
+        <img src="image/up.png" alt="Subir">
+    </a>
+
+    <script>
+        $("#faqs dd").hide();
+        $("#faqs dt").click(function () {
+            $(this).next("#faqs dd").slideToggle(500);
+            $(this).toggleClass("expanded");
+        });
+    </script>
+</body>
+    
+</html>
